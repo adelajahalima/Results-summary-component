@@ -1,0 +1,139 @@
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.outermost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+   display: flex;
+   width: 600px;
+   justify-content:center;
+   border-radius: 20px; 
+   box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.1);
+
+}
+.left-column{
+    border-radius: 20px;
+    padding: 25px;
+    color: #fff;
+    text-align: center; /* for p tag, h3 and h4 */
+    width: 40%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); /*background color doesn't have a gradient property */
+}
+
+.points-circle{
+    padding: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 1px 50px 50px 15px hsla(256, 80%, 43%, 1); /*inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);*/
+    margin: 0 auto; /* make it align at the center with the other elements */
+}
+.points-numerator{
+    font-weight: bold;
+    font-size: 60px;
+}
+.left-col-text p{
+    font-weight: 200;
+    margin-top:0;
+    margin-bottom:0;
+}
+.left-col-text h3{
+    margin-bottom: 10px;
+}
+
+.right-column{
+    width: 50%;
+    padding: 20px;
+  
+}
+.points-reaction, .points-memory, .points-verbal, .points-visual{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 13px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+.points-wrapper{
+    display: flex;
+}
+.points-wrapper img{
+    padding-right: 5px;
+}
+.points-reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+.points-memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+.points-verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+.points-visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+.points-reaction .dark-text, .points-memory .dark-text, .points-verbal .dark-text, .points-visual .dark-text{
+    color: #000;
+    font-weight: bold;
+}
+.points-reaction .light-text, .points-memory .light-text, .points-verbal .light-text, .points-visual .light-text{
+    color: #778899;
+    font-weight: 500;
+}
+.button-below{
+    color: #fff;
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+.button-below:hover{
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.attribution p{
+    text-align: center;
+}
+
+@media (max-width:760px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        padding:0px;
+        border-radius: 0px;
+    }
+    .left-column{
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0px;
+    }
+    .left-col-text p{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right-column{
+        width: 80%;
+        padding: 0px;
+        margin: 0 auto;
+    }
+}
