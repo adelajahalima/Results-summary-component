@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: inset 1px 50px 50px 15px hsla(256, 80%, 43%, 1); /*inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);*/
+    box-shadow: inset 1px 50px 50px 15px hsla(256, 72%, 46%, 1); /*inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);*/
     margin: 0 auto; /* make it align at the center with the other elements */
 }
 .points-numerator{
